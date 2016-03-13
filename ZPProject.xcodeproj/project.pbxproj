@@ -128,6 +128,7 @@
 		1C2EA31F1C9521A200AFD60F /* ZPProject */ = {
 			isa = PBXGroup;
 			children = (
+				1C2EA3801C95762D00AFD60F /* Network */,
 				1C2EA3631C954E3900AFD60F /* Four */,
 				1C2EA3621C954E2800AFD60F /* Three */,
 				1C2EA3611C954E1C00AFD60F /* Second */,
@@ -353,6 +354,13 @@
 				1C2EA3241C9521A200AFD60F /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1C2EA3801C95762D00AFD60F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		A29796E9408AA83E98CFEA09 /* Pods */ = {
@@ -704,10 +712,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = /Users/lizhipeng/Documents/ZPProject/ZPProject/ZPProject.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+				);
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZP.ZPProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -717,10 +732,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = /Users/lizhipeng/Documents/ZPProject/ZPProject/ZPProject.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+				);
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZP.ZPProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
