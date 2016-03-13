@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZPTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ZPTabbarViewController *TabbarVC = [[ZPTabbarViewController alloc] init];
+    self.window.rootViewController = TabbarVC;
+    
+    
+    
     return YES;
 }
 
