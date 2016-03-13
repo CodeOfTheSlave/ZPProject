@@ -21,6 +21,7 @@
 		1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA36E1C954F0E00AFD60F /* ZPThreeViewController.m */; };
 		1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3741C954F7300AFD60F /* ZPSecondViewController.m */; };
 		1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */; };
+		1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3821C957A2500AFD60F /* ZPNetworking.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		1C2EA37A1C954FEE00AFD60F /* ZPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstViewController.h; sourceTree = "<group>"; };
 		1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstViewController.m; sourceTree = "<group>"; };
 		1C2EA37F1C9573D800AFD60F /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPProject.pch; sourceTree = "<group>"; };
+		1C2EA3811C957A2500AFD60F /* ZPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNetworking.h; sourceTree = "<group>"; };
+		1C2EA3821C957A2500AFD60F /* ZPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNetworking.m; sourceTree = "<group>"; };
 		2B3DFCFD029311ED6ADAFAE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +362,8 @@
 		1C2EA3801C95762D00AFD60F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1C2EA3811C957A2500AFD60F /* ZPNetworking.h */,
+				1C2EA3821C957A2500AFD60F /* ZPNetworking.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -568,6 +573,7 @@
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
+				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 			);
