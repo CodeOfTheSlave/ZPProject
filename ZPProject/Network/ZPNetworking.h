@@ -16,6 +16,9 @@ typedef void (^resultBlock)(id responseObject,NSError *error);
 @property (nonatomic,weak) resultBlock successs;
 
 
-+ (void)GETWithUrl:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator;
++ (void)GET:(NSString *)url   parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator;
++ (void)POST:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator;
+
+
 
 @end

@@ -12,9 +12,10 @@
 #import "MBProgressHUD.h"
 #import "AppDelegate.h"
 
+
 @interface ZPNetworking()
 
-@property (nonatomic,copy) AFHTTPSessionManager *manager;
+@property (nonatomic,strong) AFHTTPSessionManager *manager;
 
 @end
 
@@ -33,11 +34,14 @@
 + (ZPNetworking *)shareInstance
 {
     static ZPNetworking *network  = nil;
-    static dispatch_once_t *onceToken;
-    dispatch_once(onceToken, ^{
-        network = [[ZPNetworking shareInstance] init];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        network = [[ZPNetworking alloc] init];
     });
     return network;
+    
+    
+    
 }
 
 #pragma  mark - 检测网络变化
@@ -45,7 +49,7 @@
 {
     AFNetworkReachabilityManager *manager  = [AFNetworkReachabilityManager sharedManager];
     [manager startMonitoring];
-    
+
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case AFNetworkReachabilityStatusUnknown:
@@ -72,16 +76,70 @@
 }
 
 #pragma mark GET请求
-+ (void)GETWithUrl:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator
-{
-    [[self shareInstance] GETWithUrl:url parameter:parameter result:result isIndicator:isIndicator];
++ (void)GET:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator {
+    [[self shareInstance] GET:url parameter:parameter result:result isIndicator:isIndicator];
+    
 }
 
-- (void)GETWithUrl:(NSString *)url   parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator;
+
+- (void)GET:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator
 {
-    if(isIndicator){
-        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication].delegate window] animated:YES];
+    
+    if(isIndicator) {
+        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication].delegate window] animated:isIndicator];
     }
+    
+    self.manager.requestSerializer = [AFJSONRequestSerializer serializer ];
+    self.manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    [self.manager GET:url parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD hideHUDForView:[[UIApplication sharedApplication].delegate window] animated:YES];
+        result ? result(responseObject,nil) : nil;
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        result ? result(nil,error) : nil;
+    }];
+    
+}
+
+
+#pragma mark - POST 请求
++ (void)POST:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator
+{
+    [[self shareInstance] POST:url parameter:parameter result:result isIndicator:isIndicator];
+}
+
+- (void)POST:(NSString *)url parameter:(id)parameter result:(resultBlock)result isIndicator:(BOOL)isIndicator {
+    if(isIndicator) {
+        [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication].delegate window] animated:isIndicator];
+    }
+    
+    self.manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    self.manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    
+    [self.manager POST:url parameters:parameter progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD hideHUDForView:[[UIApplication sharedApplication].delegate window] animated:YES];
+        result ? result(responseObject,nil) : nil;
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        result ? result(nil,error) : nil;
+    }];
+    
+//    [self.manager POST:url parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        [MBProgressHUD hideHUDForView:[[UIApplication sharedApplication].delegate window] animated:YES];
+//        result ? result(responseObject,nil) : nil;
+//    } progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        [MBProgressHUD hideHUDForView:[[UIApplication sharedApplication].delegate window] animated:YES];
+//        result ? result(responseObject,nil) : nil;
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        result ? result(nil,error) : nil;
+//    }];
     
     
 }

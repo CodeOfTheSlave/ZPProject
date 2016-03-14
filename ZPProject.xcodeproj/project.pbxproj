@@ -108,7 +108,6 @@
 		1C2EA3141C9521A200AFD60F = {
 			isa = PBXGroup;
 			children = (
-				1C2EA3761C954F8D00AFD60F /* ViewController */,
 				1C2EA31F1C9521A200AFD60F /* ZPProject */,
 				1C2EA3391C9521A200AFD60F /* ZPProjectTests */,
 				1C2EA3441C9521A200AFD60F /* ZPProjectUITests */,
@@ -318,13 +317,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1C2EA3761C954F8D00AFD60F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		1C2EA3771C954FBD00AFD60F /* ViewController */ = {
