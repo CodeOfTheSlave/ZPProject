@@ -8,29 +8,70 @@
 
 #import "ZPFirstViewController.h"
 
-@interface ZPFirstViewController ()
+@interface ZPFirstViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSArray *dataSource;
+@property (nonatomic,strong) NSArray *classArray ;
 
 @end
 
 @implementation ZPFirstViewController
 
+#pragma mark - 懒加载
+- (UITableView *)tableView {
+    if(_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return  _tableView;
+}
+
+- (NSArray *)dataSource {
+    if(_dataSource == nil) {
+        _dataSource = @[@"GET",@"POST"];
+    }
+    return _dataSource;
+}
+
+- (NSArray *)classArray {
+    if(_classArray == nil) {
+        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController"];
+    }
+    return _classArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-#pragma mark - GET
-//    [ZPNetworking GET:@"https://api.douban.com/v2/book/search" parameter:@{@"q":@"5"} result:^(id responseObject, NSError *error) {
-//        NSLog(@"444===%@",responseObject);
-//    } isIndicator:YES];
-    
-#pragma mark - POST
-    [ZPNetworking POST:@"https://api.douban.com/v2/book/6548683/collection" parameter:@{@"status":@"wish"} result:^(id responseObject, NSError *error) {
-        NSLog(@"%@===",responseObject);
-    } isIndicator:YES];
-    
+    [self.view addSubview:self.tableView];
+    self.tableView.tableFooterView = [[UIView alloc] init];
     
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.dataSource.count;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID  = @"cell";
+    UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if(!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = self.dataSource[indexPath.row];
+    
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Class className = NSClassFromString(self.classArray[indexPath.row]);
+    UIViewController *nextVC = [[className alloc] init];
+    [self.navigationController pushViewController:nextVC animated:YES];
+}
 
 @end
