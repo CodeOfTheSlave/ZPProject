@@ -25,6 +25,9 @@
 		1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3741C954F7300AFD60F /* ZPSecondViewController.m */; };
 		1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */; };
 		1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3821C957A2500AFD60F /* ZPNetworking.m */; };
+		1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */; };
+		1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */; };
+		1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,12 @@
 		1C2EA37F1C9573D800AFD60F /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPProject.pch; sourceTree = "<group>"; };
 		1C2EA3811C957A2500AFD60F /* ZPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNetworking.h; sourceTree = "<group>"; };
 		1C2EA3821C957A2500AFD60F /* ZPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNetworking.m; sourceTree = "<group>"; };
+		1C5226FC1C9CEFB90069D736 /* ZPJSONModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPJSONModelViewController.h; sourceTree = "<group>"; };
+		1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPJSONModelViewController.m; sourceTree = "<group>"; };
+		1C5226FF1C9CF06D0069D736 /* ZPFirstJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstJSONModel.h; sourceTree = "<group>"; };
+		1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstJSONModel.m; sourceTree = "<group>"; };
+		1C5227021C9CFB700069D736 /* ZPImagesJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPImagesJSONModel.h; sourceTree = "<group>"; };
+		1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPImagesJSONModel.m; sourceTree = "<group>"; };
 		2B3DFCFD029311ED6ADAFAE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +269,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */,
 				1C014D9D1C98699E007E4F8D /* POST请求 */,
 				1C014D991C986571007E4F8D /* GET请求 */,
 				1C014D981C986532007E4F8D /* Main */,
@@ -408,6 +418,35 @@
 				1C2EA3821C957A2500AFD60F /* ZPNetworking.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9B78281C9CEEA2004CD1A0 /* Model */,
+				1C9B78271C9CEE93004CD1A0 /* ViewController */,
+			);
+			path = "JSONModel应用";
+			sourceTree = "<group>";
+		};
+		1C9B78271C9CEE93004CD1A0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C5226FC1C9CEFB90069D736 /* ZPJSONModelViewController.h */,
+				1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C9B78281C9CEEA2004CD1A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C5226FF1C9CF06D0069D736 /* ZPFirstJSONModel.h */,
+				1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */,
+				1C5227021C9CFB700069D736 /* ZPImagesJSONModel.h */,
+				1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A29796E9408AA83E98CFEA09 /* Pods */ = {
@@ -614,13 +653,16 @@
 				1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
+				1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
 				1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */,
+				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
 				1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
+				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +804,7 @@
 			baseConfigurationReference = 842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = /Users/lizhipeng/Documents/ZPProject/ZPProject/ZPProject.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -783,6 +826,7 @@
 			baseConfigurationReference = 8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = /Users/lizhipeng/Documents/ZPProject/ZPProject/ZPProject.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

@@ -30,14 +30,14 @@
 
 - (NSArray *)dataSource {
     if(_dataSource == nil) {
-        _dataSource = @[@"GET",@"POST"];
+        _dataSource = @[@"GET",@"POST",@"JSONModel"];
     }
     return _dataSource;
 }
 
 - (NSArray *)classArray {
     if(_classArray == nil) {
-        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController"];
+        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController",@"ZPJSONModelViewController"];
     }
     return _classArray;
 }
