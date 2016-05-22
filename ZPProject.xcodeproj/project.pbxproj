@@ -34,6 +34,8 @@
 		1C99A0D61CF1FFE50014097A /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0CE1CF1FFE50014097A /* Person+CoreDataProperties.m */; };
 		1C99A0D71CF1FFE50014097A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0D01CF1FFE50014097A /* Person.m */; };
 		1C99A0D81CF1FFE50014097A /* ZPCoreDataRelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0D21CF1FFE50014097A /* ZPCoreDataRelationViewController.m */; };
+		1C99A0DE1CF204A30014097A /* ZPNewFeatuersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0DB1CF204A30014097A /* ZPNewFeatuersViewController.m */; };
+		1C99A0DF1CF204A30014097A /* ZPUploadImageFromSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0DD1CF204A30014097A /* ZPUploadImageFromSystemViewController.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,10 @@
 		1C99A0D01CF1FFE50014097A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1C99A0D11CF1FFE50014097A /* ZPCoreDataRelationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPCoreDataRelationViewController.h; sourceTree = "<group>"; };
 		1C99A0D21CF1FFE50014097A /* ZPCoreDataRelationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPCoreDataRelationViewController.m; sourceTree = "<group>"; };
+		1C99A0DA1CF204A30014097A /* ZPNewFeatuersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNewFeatuersViewController.h; sourceTree = "<group>"; };
+		1C99A0DB1CF204A30014097A /* ZPNewFeatuersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNewFeatuersViewController.m; sourceTree = "<group>"; };
+		1C99A0DC1CF204A30014097A /* ZPUploadImageFromSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPUploadImageFromSystemViewController.h; sourceTree = "<group>"; };
+		1C99A0DD1CF204A30014097A /* ZPUploadImageFromSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPUploadImageFromSystemViewController.m; sourceTree = "<group>"; };
 		2B3DFCFD029311ED6ADAFAE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +292,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1C99A0D91CF204A30014097A /* 未命名文件夹 */,
 				1C99A0C71CF1FFE50014097A /* coreData */,
 				1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */,
 				1C014D9D1C98699E007E4F8D /* POST请求 */,
@@ -455,6 +462,17 @@
 			);
 			name = coreData;
 			path = coreData2;
+			sourceTree = "<group>";
+		};
+		1C99A0D91CF204A30014097A /* 未命名文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+				1C99A0DA1CF204A30014097A /* ZPNewFeatuersViewController.h */,
+				1C99A0DB1CF204A30014097A /* ZPNewFeatuersViewController.m */,
+				1C99A0DC1CF204A30014097A /* ZPUploadImageFromSystemViewController.h */,
+				1C99A0DD1CF204A30014097A /* ZPUploadImageFromSystemViewController.m */,
+			);
+			path = "未命名文件夹";
 			sourceTree = "<group>";
 		};
 		1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */ = {
@@ -688,6 +706,7 @@
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */,
+				1C99A0DE1CF204A30014097A /* ZPNewFeatuersViewController.m in Sources */,
 				1C99A0D31CF1FFE50014097A /* Department+CoreDataProperties.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
@@ -703,6 +722,7 @@
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
 				1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */,
+				1C99A0DF1CF204A30014097A /* ZPUploadImageFromSystemViewController.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
