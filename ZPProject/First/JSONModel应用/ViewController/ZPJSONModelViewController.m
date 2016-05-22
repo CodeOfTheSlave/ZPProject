@@ -18,6 +18,7 @@
 
 @implementation ZPJSONModelViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -25,7 +26,7 @@
 
 #pragma mark - 自动解析模型
         ZPFirstJSONModel *model =  [[ZPFirstJSONModel alloc] initWithDictionary:responseObject[@"books"][0] error:nil];
-        NSLog(@"%@==",model.ddddd);
+        NSLog(@"%@==",model.medium);
 #pragma   JSONModel 转化成字典
         NSDictionary *dict = [model toDictionary];
          NSLog(@"%@==",dict );
