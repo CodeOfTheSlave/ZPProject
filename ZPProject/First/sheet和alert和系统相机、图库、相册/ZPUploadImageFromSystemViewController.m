@@ -169,6 +169,11 @@
     
     UIAlertAction *videoStartAction = [UIAlertAction actionWithTitle:@"录像" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
+        if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            NSLog(@"没有摄像设备");
+            return ;
+        }
+        
         pickek.sourceType = UIImagePickerControllerSourceTypeCamera;
         pickek.mediaTypes = @[@"public.movie"];
         pickek.showsCameraControls = YES;
@@ -203,8 +208,11 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
     //是否选取的是 录像（sourceType必须是 UIImagePickerControllerSourceTypeCamera ）
-    BOOL videoStart = [picker startVideoCapture];
-    NSLog(@"%d",videoStart);
+    if(picker.sourceType  == UIImagePickerControllerSourceTypeCamera) {
+        BOOL videoStart = [picker startVideoCapture];
+        NSLog(@"%d",videoStart);
+    }
+    
     
     
     
