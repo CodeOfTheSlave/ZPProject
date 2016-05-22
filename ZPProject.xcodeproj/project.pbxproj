@@ -28,6 +28,12 @@
 		1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */; };
 		1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */; };
 		1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */; };
+		1C99A0D31CF1FFE50014097A /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0C91CF1FFE50014097A /* Department+CoreDataProperties.m */; };
+		1C99A0D41CF1FFE50014097A /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0CB1CF1FFE50014097A /* Department.m */; };
+		1C99A0D51CF1FFE50014097A /* Employees.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0CC1CF1FFE50014097A /* Employees.xcdatamodel */; };
+		1C99A0D61CF1FFE50014097A /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0CE1CF1FFE50014097A /* Person+CoreDataProperties.m */; };
+		1C99A0D71CF1FFE50014097A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0D01CF1FFE50014097A /* Person.m */; };
+		1C99A0D81CF1FFE50014097A /* ZPCoreDataRelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C99A0D21CF1FFE50014097A /* ZPCoreDataRelationViewController.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +98,17 @@
 		1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstJSONModel.m; sourceTree = "<group>"; };
 		1C5227021C9CFB700069D736 /* ZPImagesJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPImagesJSONModel.h; sourceTree = "<group>"; };
 		1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPImagesJSONModel.m; sourceTree = "<group>"; };
+		1C99A0C81CF1FFE50014097A /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1C99A0C91CF1FFE50014097A /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1C99A0CA1CF1FFE50014097A /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		1C99A0CB1CF1FFE50014097A /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		1C99A0CC1CF1FFE50014097A /* Employees.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Employees.xcdatamodel; sourceTree = "<group>"; };
+		1C99A0CD1CF1FFE50014097A /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1C99A0CE1CF1FFE50014097A /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1C99A0CF1CF1FFE50014097A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1C99A0D01CF1FFE50014097A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1C99A0D11CF1FFE50014097A /* ZPCoreDataRelationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPCoreDataRelationViewController.h; sourceTree = "<group>"; };
+		1C99A0D21CF1FFE50014097A /* ZPCoreDataRelationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPCoreDataRelationViewController.m; sourceTree = "<group>"; };
 		2B3DFCFD029311ED6ADAFAE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +286,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1C99A0C71CF1FFE50014097A /* coreData */,
 				1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */,
 				1C014D9D1C98699E007E4F8D /* POST请求 */,
 				1C014D991C986571007E4F8D /* GET请求 */,
@@ -418,6 +436,25 @@
 				1C2EA3821C957A2500AFD60F /* ZPNetworking.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1C99A0C71CF1FFE50014097A /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				1C99A0C81CF1FFE50014097A /* Department+CoreDataProperties.h */,
+				1C99A0C91CF1FFE50014097A /* Department+CoreDataProperties.m */,
+				1C99A0CA1CF1FFE50014097A /* Department.h */,
+				1C99A0CB1CF1FFE50014097A /* Department.m */,
+				1C99A0CC1CF1FFE50014097A /* Employees.xcdatamodel */,
+				1C99A0CD1CF1FFE50014097A /* Person+CoreDataProperties.h */,
+				1C99A0CE1CF1FFE50014097A /* Person+CoreDataProperties.m */,
+				1C99A0CF1CF1FFE50014097A /* Person.h */,
+				1C99A0D01CF1FFE50014097A /* Person.m */,
+				1C99A0D11CF1FFE50014097A /* ZPCoreDataRelationViewController.h */,
+				1C99A0D21CF1FFE50014097A /* ZPCoreDataRelationViewController.m */,
+			);
+			name = coreData;
+			path = coreData2;
 			sourceTree = "<group>";
 		};
 		1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */ = {
@@ -651,12 +688,18 @@
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */,
+				1C99A0D31CF1FFE50014097A /* Department+CoreDataProperties.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
+				1C99A0D81CF1FFE50014097A /* ZPCoreDataRelationViewController.m in Sources */,
+				1C99A0D51CF1FFE50014097A /* Employees.xcdatamodel in Sources */,
 				1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
+				1C99A0D71CF1FFE50014097A /* Person.m in Sources */,
 				1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */,
 				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
+				1C99A0D61CF1FFE50014097A /* Person+CoreDataProperties.m in Sources */,
+				1C99A0D41CF1FFE50014097A /* Department.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
 				1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */,
@@ -754,7 +797,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "993bc292-99bd-4a1d-8acb-80ee9ec83293";
@@ -794,7 +837,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "993bc292-99bd-4a1d-8acb-80ee9ec83293";
 				SDKROOT = iphoneos;

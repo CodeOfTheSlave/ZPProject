@@ -16,8 +16,16 @@
 
 #ifndef ZPNetworking__h
 #define ZPNetworking__h
-
 #endif
+
+//屏幕的宽
+#define KScreenWith [UIScreen mainScreen].bounds.size.width
+//屏幕的高
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+//默认控制器的背景色
+#define kDefaultVCBackgroundColor kCorlorFromRGBA(240, 240, 240, 1)
+//10进制GRB转UIColor
+#define kCorlorFromRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
 
 #endif /* ZPProject_pch */
