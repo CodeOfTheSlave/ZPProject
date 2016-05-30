@@ -10,6 +10,7 @@
 		1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014D9B1C9865A3007E4F8D /* ZPFirstGETViewController.m */; };
 		1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014D9F1C9869BA007E4F8D /* ZPFirstPOSTViewController.m */; };
 		1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014DA41C986C7A007E4F8D /* GYAPI.m */; };
+		1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C26413A1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m */; };
 		1C2EA3221C9521A200AFD60F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3211C9521A200AFD60F /* main.m */; };
 		1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3241C9521A200AFD60F /* AppDelegate.m */; };
 		1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3271C9521A200AFD60F /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		1C014D9F1C9869BA007E4F8D /* ZPFirstPOSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstPOSTViewController.m; sourceTree = "<group>"; };
 		1C014DA31C986C7A007E4F8D /* GYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAPI.h; sourceTree = "<group>"; };
 		1C014DA41C986C7A007E4F8D /* GYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAPI.m; sourceTree = "<group>"; };
+		1C2641391CFC8C290000C6ED /* ZPMBProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMBProgressHUDViewController.h; sourceTree = "<group>"; };
+		1C26413A1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMBProgressHUDViewController.m; sourceTree = "<group>"; };
 		1C2EA31D1C9521A200AFD60F /* ZPProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2EA3211C9521A200AFD60F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C2EA3231C9521A200AFD60F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +186,15 @@
 			path = ZPAPI;
 			sourceTree = "<group>";
 		};
+		1C2641381CFC8C1A0000C6ED /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1C2641391CFC8C290000C6ED /* ZPMBProgressHUDViewController.h */,
+				1C26413A1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		1C2EA3141C9521A200AFD60F = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +304,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1C2641381CFC8C1A0000C6ED /* MBProgressHUD */,
 				1CCE3FFA1CF211F700430EED /* sheet和alert和系统相机、图库、相册 */,
 				1CCE3FE81CF2117600430EED /* coreData */,
 				1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */,
@@ -704,6 +717,7 @@
 				1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */,
 				1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */,
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
+				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */,
 				1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */,

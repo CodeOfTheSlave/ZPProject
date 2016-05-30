@@ -30,14 +30,14 @@
 
 - (NSArray *)dataSource {
     if(_dataSource == nil) {
-        _dataSource = @[@"GET",@"POST",@"JSONModel",@"CoreData",@"sheet和alert",@"系统照片、图片、相机"];
+        _dataSource = @[@"GET",@"POST",@"JSONModel",@"CoreData",@"sheet和alert",@"系统照片、图片、相机",@"MBProgressHUD"];
     }
     return _dataSource;
 }
 
 - (NSArray *)classArray {
     if(_classArray == nil) {
-        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController",@"ZPJSONModelViewController",@"ZPCoreDataRelationViewController",@"ZPNewFeatuersViewController",@"ZPUploadImageFromSystemViewController"];
+        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController",@"ZPJSONModelViewController",@"ZPCoreDataRelationViewController",@"ZPNewFeatuersViewController",@"ZPUploadImageFromSystemViewController",@"ZPMBProgressHUDViewController"];
     }
     return _classArray;
 }
