@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014D9B1C9865A3007E4F8D /* ZPFirstGETViewController.m */; };
 		1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014D9F1C9869BA007E4F8D /* ZPFirstPOSTViewController.m */; };
-		1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C014DA41C986C7A007E4F8D /* GYAPI.m */; };
 		1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C26413A1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m */; };
+		1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2641411CFC9B8F0000C6ED /* ZPAPI.m */; };
 		1C2EA3221C9521A200AFD60F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3211C9521A200AFD60F /* main.m */; };
 		1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3241C9521A200AFD60F /* AppDelegate.m */; };
 		1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3271C9521A200AFD60F /* ViewController.m */; };
@@ -62,10 +62,10 @@
 		1C014D9B1C9865A3007E4F8D /* ZPFirstGETViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstGETViewController.m; sourceTree = "<group>"; };
 		1C014D9E1C9869BA007E4F8D /* ZPFirstPOSTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstPOSTViewController.h; sourceTree = "<group>"; };
 		1C014D9F1C9869BA007E4F8D /* ZPFirstPOSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstPOSTViewController.m; sourceTree = "<group>"; };
-		1C014DA31C986C7A007E4F8D /* GYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAPI.h; sourceTree = "<group>"; };
-		1C014DA41C986C7A007E4F8D /* GYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAPI.m; sourceTree = "<group>"; };
 		1C2641391CFC8C290000C6ED /* ZPMBProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMBProgressHUDViewController.h; sourceTree = "<group>"; };
 		1C26413A1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMBProgressHUDViewController.m; sourceTree = "<group>"; };
+		1C2641401CFC9B8F0000C6ED /* ZPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPAPI.h; sourceTree = "<group>"; };
+		1C2641411CFC9B8F0000C6ED /* ZPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPAPI.m; sourceTree = "<group>"; };
 		1C2EA31D1C9521A200AFD60F /* ZPProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZPProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2EA3211C9521A200AFD60F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C2EA3231C9521A200AFD60F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,8 +180,8 @@
 		1C014DA11C986BAF007E4F8D /* ZPAPI */ = {
 			isa = PBXGroup;
 			children = (
-				1C014DA31C986C7A007E4F8D /* GYAPI.h */,
-				1C014DA41C986C7A007E4F8D /* GYAPI.m */,
+				1C2641401CFC9B8F0000C6ED /* ZPAPI.h */,
+				1C2641411CFC9B8F0000C6ED /* ZPAPI.m */,
 			);
 			path = ZPAPI;
 			sourceTree = "<group>";
@@ -716,6 +716,7 @@
 			files = (
 				1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */,
 				1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */,
+				1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */,
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
 				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
@@ -731,7 +732,6 @@
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
-				1C014DA51C986C7A007E4F8D /* GYAPI.m in Sources */,
 				1CCE3FF71CF2117600430EED /* Person+CoreDataProperties.m in Sources */,
 				1CCE3FF51CF2117600430EED /* Department.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,

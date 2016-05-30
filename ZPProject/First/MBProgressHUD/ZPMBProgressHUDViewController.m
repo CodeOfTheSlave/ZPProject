@@ -8,7 +8,8 @@
 
 #import "ZPMBProgressHUDViewController.h"
 #import "MBProgressHUD.h"
-#import "AFNetworking.h"    
+#import "AFNetworking.h"   
+
 
 @interface ZPMBExample : NSObject
 
@@ -87,8 +88,10 @@
 -(void)netWorkingRequest {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
-     NSString *urlStr  = @"https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1425/sample_iPod.m4v.zip";
-    NSURLSessionDownloadTask *task =[session downloadTaskWithURL:[NSURL URLWithString:urlStr]];
+//     NSString *urlStr  = @"https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1425/sample_iPod.m4v.zip";
+//    
+//    NSString *dld = ZPMBProgressHUDViewControllerURLStr;
+    NSURLSessionDownloadTask *task =[session downloadTaskWithURL:[NSURL URLWithString:ZPMBProgressHUDViewControllerURLStr]];
     [task resume];
 }
 
