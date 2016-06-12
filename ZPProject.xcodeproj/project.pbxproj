@@ -29,6 +29,12 @@
 		1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */; };
 		1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */; };
 		1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */; };
+		1CBBFBDA1D0DA44100EFF8A8 /* address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1CBBFBCF1D0DA44100EFF8A8 /* address.txt */; };
+		1CBBFBDB1D0DA44100EFF8A8 /* GYAddressCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD11D0DA44100EFF8A8 /* GYAddressCityModel.m */; };
+		1CBBFBDC1D0DA44100EFF8A8 /* GYAddressProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD31D0DA44100EFF8A8 /* GYAddressProvinceModel.m */; };
+		1CBBFBDD1D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD51D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m */; };
+		1CBBFBDE1D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD71D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m */; };
+		1CBBFBDF1D0DA44100EFF8A8 /* ZPFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD91D0DA44100EFF8A8 /* ZPFMDBViewController.m */; };
 		1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FEA1CF2117600430EED /* Department+CoreDataProperties.m */; };
 		1CCE3FF51CF2117600430EED /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FEC1CF2117600430EED /* Department.m */; };
 		1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FED1CF2117600430EED /* Employees.xcdatamodel */; };
@@ -103,6 +109,17 @@
 		1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstJSONModel.m; sourceTree = "<group>"; };
 		1C5227021C9CFB700069D736 /* ZPImagesJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPImagesJSONModel.h; sourceTree = "<group>"; };
 		1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPImagesJSONModel.m; sourceTree = "<group>"; };
+		1CBBFBCF1D0DA44100EFF8A8 /* address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address.txt; sourceTree = "<group>"; };
+		1CBBFBD01D0DA44100EFF8A8 /* GYAddressCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAddressCityModel.h; sourceTree = "<group>"; };
+		1CBBFBD11D0DA44100EFF8A8 /* GYAddressCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAddressCityModel.m; sourceTree = "<group>"; };
+		1CBBFBD21D0DA44100EFF8A8 /* GYAddressProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAddressProvinceModel.h; sourceTree = "<group>"; };
+		1CBBFBD31D0DA44100EFF8A8 /* GYAddressProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAddressProvinceModel.m; sourceTree = "<group>"; };
+		1CBBFBD41D0DA44100EFF8A8 /* GYFMDBAddressCityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFMDBAddressCityManager.h; sourceTree = "<group>"; };
+		1CBBFBD51D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFMDBAddressCityManager.m; sourceTree = "<group>"; };
+		1CBBFBD61D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFMDBAddressProvinceManager.h; sourceTree = "<group>"; };
+		1CBBFBD71D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFMDBAddressProvinceManager.m; sourceTree = "<group>"; };
+		1CBBFBD81D0DA44100EFF8A8 /* ZPFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFMDBViewController.h; sourceTree = "<group>"; };
+		1CBBFBD91D0DA44100EFF8A8 /* ZPFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFMDBViewController.m; sourceTree = "<group>"; };
 		1CCE3FE91CF2117600430EED /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataProperties.h"; sourceTree = "<group>"; };
 		1CCE3FEA1CF2117600430EED /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataProperties.m"; sourceTree = "<group>"; };
 		1CCE3FEB1CF2117600430EED /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
@@ -312,6 +329,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1CBBFBCE1D0DA41C00EFF8A8 /* FMDB */,
 				1C2641381CFC8C1A0000C6ED /* MBProgressHUD */,
 				1CCE3FFA1CF211F700430EED /* sheet和alert和系统相机、图库、相册 */,
 				1CCE3FE81CF2117600430EED /* coreData */,
@@ -495,6 +513,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1CBBFBCE1D0DA41C00EFF8A8 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1CBBFBCF1D0DA44100EFF8A8 /* address.txt */,
+				1CBBFBD01D0DA44100EFF8A8 /* GYAddressCityModel.h */,
+				1CBBFBD11D0DA44100EFF8A8 /* GYAddressCityModel.m */,
+				1CBBFBD21D0DA44100EFF8A8 /* GYAddressProvinceModel.h */,
+				1CBBFBD31D0DA44100EFF8A8 /* GYAddressProvinceModel.m */,
+				1CBBFBD41D0DA44100EFF8A8 /* GYFMDBAddressCityManager.h */,
+				1CBBFBD51D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m */,
+				1CBBFBD61D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.h */,
+				1CBBFBD71D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m */,
+				1CBBFBD81D0DA44100EFF8A8 /* ZPFMDBViewController.h */,
+				1CBBFBD91D0DA44100EFF8A8 /* ZPFMDBViewController.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		1CCE3FE81CF2117600430EED /* coreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +686,7 @@
 				1C2EA3301C9521A200AFD60F /* LaunchScreen.storyboard in Resources */,
 				1C2EA32D1C9521A200AFD60F /* Assets.xcassets in Resources */,
 				1C2EA32B1C9521A200AFD60F /* Main.storyboard in Resources */,
+				1CBBFBDA1D0DA44100EFF8A8 /* address.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CBBFBDC1D0DA44100EFF8A8 /* GYAddressProvinceModel.m in Sources */,
 				1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */,
 				1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */,
 				1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */,
@@ -733,16 +771,20 @@
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
 				1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */,
+				1CBBFBDD1D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m in Sources */,
+				1CBBFBDF1D0DA44100EFF8A8 /* ZPFMDBViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
 				1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */,
 				1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */,
 				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */,
+				1CBBFBDB1D0DA44100EFF8A8 /* GYAddressCityModel.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
 				1CCE3FF71CF2117600430EED /* Person+CoreDataProperties.m in Sources */,
 				1CCE3FF51CF2117600430EED /* Department.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
+				1CBBFBDE1D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m in Sources */,
 				1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 				1CCE3FF81CF2117600430EED /* Person.m in Sources */,

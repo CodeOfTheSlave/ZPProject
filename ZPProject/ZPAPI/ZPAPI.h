@@ -10,9 +10,3 @@
 
 extern NSString *const ZPMBProgressHUDViewControllerURLStr ;
 
-
-
-
-//@interface ZPAPI : NSObject
-//
-//@end

@@ -1,4 +1,5 @@
 platform :ios,'7.0'
 pod 'MBProgressHUD'
-pod ‘AFNetworking’
+pod 'AFNetworking'
 pod 'JSONModel'
+pod 'FMDB'
