@@ -88,9 +88,6 @@
 -(void)netWorkingRequest {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
-//     NSString *urlStr  = @"https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1425/sample_iPod.m4v.zip";
-//    
-//    NSString *dld = ZPMBProgressHUDViewControllerURLStr;
     NSURLSessionDownloadTask *task =[session downloadTaskWithURL:[NSURL URLWithString:ZPMBProgressHUDViewControllerURLStr]];
     [task resume];
 }

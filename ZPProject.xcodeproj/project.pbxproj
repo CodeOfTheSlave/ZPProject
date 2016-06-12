@@ -94,7 +94,7 @@
 		1C2EA3741C954F7300AFD60F /* ZPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSecondViewController.m; sourceTree = "<group>"; };
 		1C2EA37A1C954FEE00AFD60F /* ZPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstViewController.h; sourceTree = "<group>"; };
 		1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstViewController.m; sourceTree = "<group>"; };
-		1C2EA37F1C9573D800AFD60F /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPProject.pch; sourceTree = "<group>"; };
+		1C2EA37F1C9573D800AFD60F /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPProject.pch; path = ../ZPProject.pch; sourceTree = "<group>"; };
 		1C2EA3811C957A2500AFD60F /* ZPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNetworking.h; sourceTree = "<group>"; };
 		1C2EA3821C957A2500AFD60F /* ZPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNetworking.m; sourceTree = "<group>"; };
 		1C5226FC1C9CEFB90069D736 /* ZPJSONModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPJSONModelViewController.h; sourceTree = "<group>"; };
@@ -195,6 +195,14 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		1C2641431CFCA2150000C6ED /* ZP-pch */ = {
+			isa = PBXGroup;
+			children = (
+				1C2EA37F1C9573D800AFD60F /* ZPProject.pch */,
+			);
+			path = "ZP-pch";
+			sourceTree = "<group>";
+		};
 		1C2EA3141C9521A200AFD60F = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +228,7 @@
 		1C2EA31F1C9521A200AFD60F /* ZPProject */ = {
 			isa = PBXGroup;
 			children = (
+				1C2641431CFCA2150000C6ED /* ZP-pch */,
 				1C014DA11C986BAF007E4F8D /* ZPAPI */,
 				1C2EA3801C95762D00AFD60F /* Network */,
 				1C2EA3631C954E3900AFD60F /* Four */,
@@ -235,7 +244,6 @@
 				1C2EA32E1C9521A200AFD60F /* LaunchScreen.storyboard */,
 				1C2EA3311C9521A200AFD60F /* Info.plist */,
 				1C2EA3201C9521A200AFD60F /* Supporting Files */,
-				1C2EA37F1C9573D800AFD60F /* ZPProject.pch */,
 			);
 			path = ZPProject;
 			sourceTree = "<group>";
