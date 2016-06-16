@@ -24,7 +24,6 @@
 		1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3681C954EB000AFD60F /* ZPFourViewController.m */; };
 		1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA36E1C954F0E00AFD60F /* ZPThreeViewController.m */; };
 		1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3741C954F7300AFD60F /* ZPSecondViewController.m */; };
-		1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */; };
 		1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2EA3821C957A2500AFD60F /* ZPNetworking.m */; };
 		1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */; };
 		1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */; };
@@ -43,6 +42,9 @@
 		1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FF31CF2117600430EED /* ZPCoreDataRelationViewController.m */; };
 		1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFC1CF211F700430EED /* ZPNewFeatuersViewController.m */; };
 		1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */; };
+		1CEA39A31D130AA700619963 /* ZPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A21D130AA700619963 /* ZPFirstViewController.m */; };
+		1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */; };
+		1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A71D130B1800619963 /* ZPNotificationHub.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,8 +100,6 @@
 		1C2EA36E1C954F0E00AFD60F /* ZPThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPThreeViewController.m; sourceTree = "<group>"; };
 		1C2EA3731C954F7300AFD60F /* ZPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSecondViewController.h; sourceTree = "<group>"; };
 		1C2EA3741C954F7300AFD60F /* ZPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSecondViewController.m; sourceTree = "<group>"; };
-		1C2EA37A1C954FEE00AFD60F /* ZPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstViewController.h; sourceTree = "<group>"; };
-		1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstViewController.m; sourceTree = "<group>"; };
 		1C2EA37F1C9573D800AFD60F /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPProject.pch; path = ../ZPProject.pch; sourceTree = "<group>"; };
 		1C2EA3811C957A2500AFD60F /* ZPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNetworking.h; sourceTree = "<group>"; };
 		1C2EA3821C957A2500AFD60F /* ZPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNetworking.m; sourceTree = "<group>"; };
@@ -135,6 +135,12 @@
 		1CCE3FFC1CF211F700430EED /* ZPNewFeatuersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNewFeatuersViewController.m; sourceTree = "<group>"; };
 		1CCE3FFD1CF211F700430EED /* ZPUploadImageFromSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPUploadImageFromSystemViewController.h; sourceTree = "<group>"; };
 		1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPUploadImageFromSystemViewController.m; sourceTree = "<group>"; };
+		1CEA39A11D130AA700619963 /* ZPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstViewController.h; sourceTree = "<group>"; };
+		1CEA39A21D130AA700619963 /* ZPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstViewController.m; sourceTree = "<group>"; };
+		1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNotificationHubViewController.m; sourceTree = "<group>"; };
+		1CEA39A61D130B1800619963 /* ZPNotificationHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNotificationHubViewController.h; sourceTree = "<group>"; };
+		1CEA39A71D130B1800619963 /* ZPNotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNotificationHub.m; sourceTree = "<group>"; };
+		1CEA39A81D130B1800619963 /* ZPNotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNotificationHub.h; sourceTree = "<group>"; };
 		2B3DFCFD029311ED6ADAFAE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,16 +172,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C014D981C986532007E4F8D /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				1C2EA3771C954FBD00AFD60F /* ViewController */,
-				1C2EA3781C954FCE00AFD60F /* View */,
-				1C2EA3791C954FD900AFD60F /* Model */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		1C014D991C986571007E4F8D /* GET请求 */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +325,8 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1CEA39A41D130AEC00619963 /* 角标 */,
+				1CEA39A01D130A6400619963 /* Main */,
 				1CBBFBCE1D0DA41C00EFF8A8 /* FMDB */,
 				1C2641381CFC8C1A0000C6ED /* MBProgressHUD */,
 				1CCE3FFA1CF211F700430EED /* sheet和alert和系统相机、图库、相册 */,
@@ -336,7 +334,6 @@
 				1C9B78261C9CEE64004CD1A0 /* JSONModel应用 */,
 				1C014D9D1C98699E007E4F8D /* POST请求 */,
 				1C014D991C986571007E4F8D /* GET请求 */,
-				1C014D981C986532007E4F8D /* Main */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -440,32 +437,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1C2EA3771C954FBD00AFD60F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1C2EA37A1C954FEE00AFD60F /* ZPFirstViewController.h */,
-				1C2EA37B1C954FEE00AFD60F /* ZPFirstViewController.m */,
-			);
-			name = ViewController;
-			path = ../ViewController;
-			sourceTree = "<group>";
-		};
-		1C2EA3781C954FCE00AFD60F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			path = ../View;
-			sourceTree = "<group>";
-		};
-		1C2EA3791C954FD900AFD60F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			path = ../Model;
-			sourceTree = "<group>";
-		};
 		1C2EA37E1C95503000AFD60F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +529,27 @@
 				1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */,
 			);
 			path = "sheet和alert和系统相机、图库、相册";
+			sourceTree = "<group>";
+		};
+		1CEA39A01D130A6400619963 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1CEA39A11D130AA700619963 /* ZPFirstViewController.h */,
+				1CEA39A21D130AA700619963 /* ZPFirstViewController.m */,
+			);
+			name = Main;
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		1CEA39A41D130AEC00619963 /* 角标 */ = {
+			isa = PBXGroup;
+			children = (
+				1CEA39A61D130B1800619963 /* ZPNotificationHubViewController.h */,
+				1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */,
+				1CEA39A81D130B1800619963 /* ZPNotificationHub.h */,
+				1CEA39A71D130B1800619963 /* ZPNotificationHub.m */,
+			);
+			path = "角标";
 			sourceTree = "<group>";
 		};
 		A29796E9408AA83E98CFEA09 /* Pods */ = {
@@ -767,7 +759,7 @@
 				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */,
-				1C2EA37C1C954FEE00AFD60F /* ZPFirstViewController.m in Sources */,
+				1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
 				1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */,
@@ -789,6 +781,8 @@
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 				1CCE3FF81CF2117600430EED /* Person.m in Sources */,
 				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
+				1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */,
+				1CEA39A31D130AA700619963 /* ZPFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
