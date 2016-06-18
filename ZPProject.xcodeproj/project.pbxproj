@@ -42,6 +42,9 @@
 		1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FF31CF2117600430EED /* ZPCoreDataRelationViewController.m */; };
 		1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFC1CF211F700430EED /* ZPNewFeatuersViewController.m */; };
 		1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */; };
+		1CDB553B1D14C1CA000CB128 /* ZPMJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB553A1D14C1CA000CB128 /* ZPMJExtensionViewController.m */; };
+		1CDB553E1D14C250000CB128 /* ZPMJExtensionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB553D1D14C250000CB128 /* ZPMJExtensionModel.m */; };
+		1CDB55411D160E76000CB128 /* ZPMJImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB55401D160E76000CB128 /* ZPMJImagesModel.m */; };
 		1CEA39A31D130AA700619963 /* ZPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A21D130AA700619963 /* ZPFirstViewController.m */; };
 		1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */; };
 		1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A71D130B1800619963 /* ZPNotificationHub.m */; };
@@ -135,6 +138,12 @@
 		1CCE3FFC1CF211F700430EED /* ZPNewFeatuersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNewFeatuersViewController.m; sourceTree = "<group>"; };
 		1CCE3FFD1CF211F700430EED /* ZPUploadImageFromSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPUploadImageFromSystemViewController.h; sourceTree = "<group>"; };
 		1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPUploadImageFromSystemViewController.m; sourceTree = "<group>"; };
+		1CDB55391D14C1CA000CB128 /* ZPMJExtensionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMJExtensionViewController.h; sourceTree = "<group>"; };
+		1CDB553A1D14C1CA000CB128 /* ZPMJExtensionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMJExtensionViewController.m; sourceTree = "<group>"; };
+		1CDB553C1D14C250000CB128 /* ZPMJExtensionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMJExtensionModel.h; sourceTree = "<group>"; };
+		1CDB553D1D14C250000CB128 /* ZPMJExtensionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMJExtensionModel.m; sourceTree = "<group>"; };
+		1CDB553F1D160E76000CB128 /* ZPMJImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMJImagesModel.h; sourceTree = "<group>"; };
+		1CDB55401D160E76000CB128 /* ZPMJImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMJImagesModel.m; sourceTree = "<group>"; };
 		1CEA39A11D130AA700619963 /* ZPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFirstViewController.h; sourceTree = "<group>"; };
 		1CEA39A21D130AA700619963 /* ZPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstViewController.m; sourceTree = "<group>"; };
 		1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNotificationHubViewController.m; sourceTree = "<group>"; };
@@ -325,6 +334,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				1CDB55381D14C059000CB128 /* MJExtension自动解析 */,
 				1CEA39A41D130AEC00619963 /* 角标 */,
 				1CEA39A01D130A6400619963 /* Main */,
 				1CBBFBCE1D0DA41C00EFF8A8 /* FMDB */,
@@ -529,6 +539,19 @@
 				1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */,
 			);
 			path = "sheet和alert和系统相机、图库、相册";
+			sourceTree = "<group>";
+		};
+		1CDB55381D14C059000CB128 /* MJExtension自动解析 */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB55391D14C1CA000CB128 /* ZPMJExtensionViewController.h */,
+				1CDB553A1D14C1CA000CB128 /* ZPMJExtensionViewController.m */,
+				1CDB553C1D14C250000CB128 /* ZPMJExtensionModel.h */,
+				1CDB553D1D14C250000CB128 /* ZPMJExtensionModel.m */,
+				1CDB553F1D160E76000CB128 /* ZPMJImagesModel.h */,
+				1CDB55401D160E76000CB128 /* ZPMJImagesModel.m */,
+			);
+			path = "MJExtension自动解析";
 			sourceTree = "<group>";
 		};
 		1CEA39A01D130A6400619963 /* Main */ = {
@@ -767,6 +790,7 @@
 				1CBBFBDF1D0DA44100EFF8A8 /* ZPFMDBViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
 				1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */,
+				1CDB55411D160E76000CB128 /* ZPMJImagesModel.m in Sources */,
 				1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */,
 				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
@@ -777,8 +801,10 @@
 				1CCE3FF51CF2117600430EED /* Department.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
 				1CBBFBDE1D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m in Sources */,
+				1CDB553E1D14C250000CB128 /* ZPMJExtensionModel.m in Sources */,
 				1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
+				1CDB553B1D14C1CA000CB128 /* ZPMJExtensionViewController.m in Sources */,
 				1CCE3FF81CF2117600430EED /* Person.m in Sources */,
 				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
 				1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */,
