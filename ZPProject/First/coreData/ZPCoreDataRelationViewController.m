@@ -26,7 +26,7 @@
 #pragma mark -  懒加载  
 -(UITableView *)tableView {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 134, KScreenWith, kScreenHeight -20-134) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 134, kScreenWidth, kScreenHeight -20-134) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
@@ -64,7 +64,7 @@
     NSArray *arr = @[@"增",@"查",@"改",@"删"];
     for (NSInteger i = 0 ; i < 4; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(i*KScreenWith/4, 64, KScreenWith/4, 40);
+        btn.frame = CGRectMake(i*kScreenWidth/4, 64, kScreenWidth/4, 40);
         btn.backgroundColor = kDefaultVCBackgroundColor;
         [btn setTitle:arr[i]  forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal ];
@@ -74,7 +74,7 @@
         [self.view addSubview:btn];
     }
     
-    self.textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 104, KScreenWith, 30)];
+    self.textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 104, kScreenWidth, 30)];
     self.textField.backgroundColor = [UIColor lightGrayColor];
     self.textField.placeholder = @"name";
     [self.view addSubview:self.textField];

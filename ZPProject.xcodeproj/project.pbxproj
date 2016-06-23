@@ -49,6 +49,9 @@
 		1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A51D130B1800619963 /* ZPNotificationHubViewController.m */; };
 		1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA39A71D130B1800619963 /* ZPNotificationHub.m */; };
 		52A1AAEB9C358296E9ACC201 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3DFCFD029311ED6ADAFAE9 /* libPods.a */; };
+		E98DFCDC1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCDB1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m */; };
+		E98DFCDF1D1BDB9B00B9F1A1 /* ZPScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCDE1D1BDB9B00B9F1A1 /* ZPScanViewController.m */; };
+		E98DFCE21D1BDD4D00B9F1A1 /* ZPScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCE11D1BDD4D00B9F1A1 /* ZPScanResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +156,12 @@
 		842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E98DFCD51D1BD26F00B9F1A1 /* ZPProject.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPProject.pch; sourceTree = "<group>"; };
+		E98DFCDA1D1BD43E00B9F1A1 /* ZPQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPQRCodeViewController.h; sourceTree = "<group>"; };
+		E98DFCDB1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPQRCodeViewController.m; sourceTree = "<group>"; };
+		E98DFCDD1D1BDB9B00B9F1A1 /* ZPScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPScanViewController.h; sourceTree = "<group>"; };
+		E98DFCDE1D1BDB9B00B9F1A1 /* ZPScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPScanViewController.m; sourceTree = "<group>"; };
+		E98DFCE01D1BDD4D00B9F1A1 /* ZPScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPScanResultViewController.h; sourceTree = "<group>"; };
+		E98DFCE11D1BDD4D00B9F1A1 /* ZPScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPScanResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +335,7 @@
 		1C2EA3601C954DFC00AFD60F /* First */ = {
 			isa = PBXGroup;
 			children = (
+				E98DFCD61D1BD3EE00B9F1A1 /* 二维码 */,
 				1CDB55381D14C059000CB128 /* MJExtension自动解析 */,
 				1CEA39A41D130AEC00619963 /* 角标 */,
 				1CEA39A01D130A6400619963 /* Main */,
@@ -584,6 +594,19 @@
 			path = "ZP-pch";
 			sourceTree = "<group>";
 		};
+		E98DFCD61D1BD3EE00B9F1A1 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				E98DFCDA1D1BD43E00B9F1A1 /* ZPQRCodeViewController.h */,
+				E98DFCDB1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m */,
+				E98DFCDD1D1BDB9B00B9F1A1 /* ZPScanViewController.h */,
+				E98DFCDE1D1BDB9B00B9F1A1 /* ZPScanViewController.m */,
+				E98DFCE01D1BDD4D00B9F1A1 /* ZPScanResultViewController.h */,
+				E98DFCE11D1BDD4D00B9F1A1 /* ZPScanResultViewController.m */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
 		EED64F1DBA4B29CB998A0B62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,6 +803,7 @@
 				1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */,
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
 				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
+				E98DFCDC1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */,
 				1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */,
@@ -793,6 +817,7 @@
 				1CDB55411D160E76000CB128 /* ZPMJImagesModel.m in Sources */,
 				1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */,
 				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
+				E98DFCE21D1BDD4D00B9F1A1 /* ZPScanResultViewController.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
 				1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */,
 				1CBBFBDB1D0DA44100EFF8A8 /* GYAddressCityModel.m in Sources */,
@@ -806,6 +831,7 @@
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 				1CDB553B1D14C1CA000CB128 /* ZPMJExtensionViewController.m in Sources */,
 				1CCE3FF81CF2117600430EED /* Person.m in Sources */,
+				E98DFCDF1D1BDB9B00B9F1A1 /* ZPScanViewController.m in Sources */,
 				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
 				1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */,
 				1CEA39A31D130AA700619963 /* ZPFirstViewController.m in Sources */,
@@ -954,8 +980,8 @@
 			baseConfigurationReference = 842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Li Xuan (46692UEGZB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Xuan (46692UEGZB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPProject/ZP-pch/ZPProject.pch";
 				HEADER_SEARCH_PATHS = (
@@ -967,9 +993,9 @@
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZP.ZPProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "993bc292-99bd-4a1d-8acb-80ee9ec83293";
+				PROVISIONING_PROFILE = "d9e6cde3-ad1b-48dd-bd23-b944bd63c831";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
@@ -979,8 +1005,8 @@
 			baseConfigurationReference = 8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Li Xuan (46692UEGZB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Xuan (46692UEGZB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPProject/ZP-pch/ZPProject.pch";
 				HEADER_SEARCH_PATHS = (
@@ -992,9 +1018,9 @@
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ZP.ZPProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "993bc292-99bd-4a1d-8acb-80ee9ec83293";
+				PROVISIONING_PROFILE = "d9e6cde3-ad1b-48dd-bd23-b944bd63c831";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
