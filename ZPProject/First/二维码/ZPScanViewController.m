@@ -30,7 +30,7 @@
                               delegate:nil
                               cancelButtonTitle:@"确定"
                               otherButtonTitles:nil];
-        [alert show];
+        [alert show]; 
         return;
     }
 #pragma clang diagnostic pop
