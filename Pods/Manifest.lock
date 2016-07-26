@@ -17,6 +17,7 @@ PODS:
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
+  - IQKeyboardManager (3.3.7)
   - JSONModel (1.2.0)
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.10)
@@ -25,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FMDB
+  - IQKeyboardManager
   - JSONModel
   - MBProgressHUD
   - MJExtension
@@ -33,6 +35,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548

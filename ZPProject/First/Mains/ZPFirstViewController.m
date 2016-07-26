@@ -30,14 +30,14 @@
 
 - (NSArray *)dataSource {
     if(_dataSource == nil) {
-        _dataSource = @[@"GET",@"POST",@"JSONModel",@"CoreData",@"sheet和alert",@"系统照片、图片、相机",@"MBProgressHUD",@"FMDB",@"角标",@"MJExtension自动解析模型",@"二维码",@"扫一扫"];
+        _dataSource = @[@"GET",@"POST",@"JSONModel",@"CoreData",@"sheet和alert",@"系统照片、图片、相机",@"MBProgressHUD",@"FMDB",@"角标",@"MJExtension自动解析模型",@"二维码",@"扫一扫",@"IQKeyboardManager键盘"];
     }
     return _dataSource;
 }
 
 - (NSArray *)classArray {
     if(_classArray == nil) {
-        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController",@"ZPJSONModelViewController",@"ZPCoreDataRelationViewController",@"ZPNewFeatuersViewController",@"ZPUploadImageFromSystemViewController",@"ZPMBProgressHUDViewController",@"ZPFMDBViewController",@"ZPNotificationHubViewController",@"ZPMJExtensionViewController",@"ZPQRCodeViewController",@"ZPScanViewController"];
+        _classArray = @[@"ZPFirstGETViewController",@"ZPFirstPOSTViewController",@"ZPJSONModelViewController",@"ZPCoreDataRelationViewController",@"ZPNewFeatuersViewController",@"ZPUploadImageFromSystemViewController",@"ZPMBProgressHUDViewController",@"ZPFMDBViewController",@"ZPNotificationHubViewController",@"ZPMJExtensionViewController",@"ZPQRCodeViewController",@"ZPScanViewController",@"ZPIQKeyBoardViewController"];
     }
     return _classArray;
 }
