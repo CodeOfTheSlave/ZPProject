@@ -18,6 +18,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,6 +69,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>55DBDD8B7D446F1D618F303A9FB53209</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5DD5FAF3A5ACBD12F5C70D51395998FE</key>
 		<dict>
 			<key>primary</key>
@@ -74,12 +84,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>98EAFB3FED5EC61C34DA598DEB939D77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0BD96DB86767BD3FAD0AC59AC6565F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
