@@ -130,7 +130,7 @@
     
     Person *per = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.context];
     per.name = [NSString stringWithFormat:@"%@%i",perArr[arc4random()%4],arc4random()%100];
-    per.department = depart;
+    per.relationship = depart;
     per.age = @(arc4random()%100);
     
     NSError *error = nil;
@@ -238,7 +238,7 @@
     }
     cell.textLabel.font = [UIFont systemFontOfSize:12];
     Person *per = self.dataSource[indexPath.row];
-    Department *depart = per.department;
+    Department *depart = per.relationship;
     cell.textLabel.text  = [NSString stringWithFormat:@"name:%@ age:%@ department:%@ departmentNo:%@",per.name,per.age,depart.name,depart.departmentNo];
     
     return cell;
