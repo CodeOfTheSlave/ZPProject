@@ -3,14 +3,15 @@
     <entity name="Department" representedClassName="Department" syncable="YES">
         <attribute name="departmentNo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="relationship" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="relationship" inverseEntity="Department" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Department" positionX="-54" positionY="18" width="128" height="75"/>
-        <element name="Person" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Department" positionX="-54" positionY="18" width="128" height="30"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="30"/>
     </elements>
 </model>
