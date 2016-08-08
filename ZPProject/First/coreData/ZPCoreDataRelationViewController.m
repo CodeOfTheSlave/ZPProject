@@ -130,7 +130,9 @@
     
     Person *per = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.context];
     per.name = [NSString stringWithFormat:@"%@%i",perArr[arc4random()%4],arc4random()%100];
-    per.department = depart;
+    
+    //多表关联需要每个表都相互设置关系   Department与Person 这两个表相互关联 
+    per.relationship = depart;
     per.age = @(arc4random()%100);
     
     NSError *error = nil;
@@ -238,7 +240,7 @@
     }
     cell.textLabel.font = [UIFont systemFontOfSize:12];
     Person *per = self.dataSource[indexPath.row];
-    Department *depart = per.department;
+    Department *depart = per.relationship;
     cell.textLabel.text  = [NSString stringWithFormat:@"name:%@ age:%@ department:%@ departmentNo:%@",per.name,per.age,depart.name,depart.departmentNo];
     
     return cell;

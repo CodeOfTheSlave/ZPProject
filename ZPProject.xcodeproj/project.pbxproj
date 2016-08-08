@@ -28,17 +28,17 @@
 		1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5226FD1C9CEFB90069D736 /* ZPJSONModelViewController.m */; };
 		1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */; };
 		1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */; };
+		1C90105D1D570C110036BF43 /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C90105A1D570C110036BF43 /* Department+CoreDataProperties.m */; };
+		1C90105E1D570C110036BF43 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C90105C1D570C110036BF43 /* Department.m */; };
+		1C9010631D570C2D0036BF43 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9010601D570C2D0036BF43 /* Person+CoreDataProperties.m */; };
+		1C9010641D570C2D0036BF43 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9010621D570C2D0036BF43 /* Person.m */; };
 		1CBBFBDA1D0DA44100EFF8A8 /* address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1CBBFBCF1D0DA44100EFF8A8 /* address.txt */; };
 		1CBBFBDB1D0DA44100EFF8A8 /* GYAddressCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD11D0DA44100EFF8A8 /* GYAddressCityModel.m */; };
 		1CBBFBDC1D0DA44100EFF8A8 /* GYAddressProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD31D0DA44100EFF8A8 /* GYAddressProvinceModel.m */; };
 		1CBBFBDD1D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD51D0DA44100EFF8A8 /* GYFMDBAddressCityManager.m */; };
 		1CBBFBDE1D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD71D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m */; };
 		1CBBFBDF1D0DA44100EFF8A8 /* ZPFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBFBD91D0DA44100EFF8A8 /* ZPFMDBViewController.m */; };
-		1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FEA1CF2117600430EED /* Department+CoreDataProperties.m */; };
-		1CCE3FF51CF2117600430EED /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FEC1CF2117600430EED /* Department.m */; };
 		1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FED1CF2117600430EED /* Employees.xcdatamodel */; };
-		1CCE3FF71CF2117600430EED /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FEF1CF2117600430EED /* Person+CoreDataProperties.m */; };
-		1CCE3FF81CF2117600430EED /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FF11CF2117600430EED /* Person.m */; };
 		1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FF31CF2117600430EED /* ZPCoreDataRelationViewController.m */; };
 		1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFC1CF211F700430EED /* ZPNewFeatuersViewController.m */; };
 		1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE3FFE1CF211F700430EED /* ZPUploadImageFromSystemViewController.m */; };
@@ -115,6 +115,14 @@
 		1C5227001C9CF06D0069D736 /* ZPFirstJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFirstJSONModel.m; sourceTree = "<group>"; };
 		1C5227021C9CFB700069D736 /* ZPImagesJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPImagesJSONModel.h; sourceTree = "<group>"; };
 		1C5227031C9CFB700069D736 /* ZPImagesJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPImagesJSONModel.m; sourceTree = "<group>"; };
+		1C9010591D570C110036BF43 /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1C90105A1D570C110036BF43 /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1C90105B1D570C110036BF43 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		1C90105C1D570C110036BF43 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		1C90105F1D570C2D0036BF43 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1C9010601D570C2D0036BF43 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1C9010611D570C2D0036BF43 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1C9010621D570C2D0036BF43 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1CBBFBCF1D0DA44100EFF8A8 /* address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address.txt; sourceTree = "<group>"; };
 		1CBBFBD01D0DA44100EFF8A8 /* GYAddressCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAddressCityModel.h; sourceTree = "<group>"; };
 		1CBBFBD11D0DA44100EFF8A8 /* GYAddressCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAddressCityModel.m; sourceTree = "<group>"; };
@@ -126,15 +134,7 @@
 		1CBBFBD71D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFMDBAddressProvinceManager.m; sourceTree = "<group>"; };
 		1CBBFBD81D0DA44100EFF8A8 /* ZPFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFMDBViewController.h; sourceTree = "<group>"; };
 		1CBBFBD91D0DA44100EFF8A8 /* ZPFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFMDBViewController.m; sourceTree = "<group>"; };
-		1CCE3FE91CF2117600430EED /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1CCE3FEA1CF2117600430EED /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1CCE3FEB1CF2117600430EED /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
-		1CCE3FEC1CF2117600430EED /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 		1CCE3FED1CF2117600430EED /* Employees.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Employees.xcdatamodel; sourceTree = "<group>"; };
-		1CCE3FEE1CF2117600430EED /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1CCE3FEF1CF2117600430EED /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1CCE3FF01CF2117600430EED /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		1CCE3FF11CF2117600430EED /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1CCE3FF21CF2117600430EED /* ZPCoreDataRelationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPCoreDataRelationViewController.h; sourceTree = "<group>"; };
 		1CCE3FF31CF2117600430EED /* ZPCoreDataRelationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPCoreDataRelationViewController.m; sourceTree = "<group>"; };
 		1CCE3FFB1CF211F700430EED /* ZPNewFeatuersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNewFeatuersViewController.h; sourceTree = "<group>"; };
@@ -521,15 +521,15 @@
 		1CCE3FE81CF2117600430EED /* coreData */ = {
 			isa = PBXGroup;
 			children = (
-				1CCE3FE91CF2117600430EED /* Department+CoreDataProperties.h */,
-				1CCE3FEA1CF2117600430EED /* Department+CoreDataProperties.m */,
-				1CCE3FEB1CF2117600430EED /* Department.h */,
-				1CCE3FEC1CF2117600430EED /* Department.m */,
 				1CCE3FED1CF2117600430EED /* Employees.xcdatamodel */,
-				1CCE3FEE1CF2117600430EED /* Person+CoreDataProperties.h */,
-				1CCE3FEF1CF2117600430EED /* Person+CoreDataProperties.m */,
-				1CCE3FF01CF2117600430EED /* Person.h */,
-				1CCE3FF11CF2117600430EED /* Person.m */,
+				1C9010591D570C110036BF43 /* Department+CoreDataProperties.h */,
+				1C90105A1D570C110036BF43 /* Department+CoreDataProperties.m */,
+				1C90105B1D570C110036BF43 /* Department.h */,
+				1C90105C1D570C110036BF43 /* Department.m */,
+				1C90105F1D570C2D0036BF43 /* Person+CoreDataProperties.h */,
+				1C9010601D570C2D0036BF43 /* Person+CoreDataProperties.m */,
+				1C9010611D570C2D0036BF43 /* Person.h */,
+				1C9010621D570C2D0036BF43 /* Person.m */,
 				1CCE3FF21CF2117600430EED /* ZPCoreDataRelationViewController.h */,
 				1CCE3FF31CF2117600430EED /* ZPCoreDataRelationViewController.m */,
 			);
@@ -811,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CBBFBDC1D0DA44100EFF8A8 /* GYAddressProvinceModel.m in Sources */,
+				1C90105D1D570C110036BF43 /* Department+CoreDataProperties.m in Sources */,
 				1C2EA3751C954F7300AFD60F /* ZPSecondViewController.m in Sources */,
 				1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */,
 				1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */,
@@ -818,6 +819,7 @@
 				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
 				E98DFCDC1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
+				1C9010641D570C2D0036BF43 /* Person.m in Sources */,
 				1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */,
 				1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
@@ -827,27 +829,25 @@
 				1CBBFBDF1D0DA44100EFF8A8 /* ZPFMDBViewController.m in Sources */,
 				1C2EA3281C9521A200AFD60F /* ViewController.m in Sources */,
 				1C014D9C1C9865A3007E4F8D /* ZPFirstGETViewController.m in Sources */,
+				1C9010631D570C2D0036BF43 /* Person+CoreDataProperties.m in Sources */,
 				1CDB55411D160E76000CB128 /* ZPMJImagesModel.m in Sources */,
 				1CCE3FF91CF2117600430EED /* ZPCoreDataRelationViewController.m in Sources */,
 				1C5227041C9CFB700069D736 /* ZPImagesJSONModel.m in Sources */,
 				E98DFCE21D1BDD4D00B9F1A1 /* ZPScanResultViewController.m in Sources */,
 				1C2EA35F1C95236B00AFD60F /* ZPTabbarView.m in Sources */,
-				1CCE3FF41CF2117600430EED /* Department+CoreDataProperties.m in Sources */,
 				E945F4B91D46F6FC005B2015 /* ZPIQKeyBoardViewController.m in Sources */,
 				1CBBFBDB1D0DA44100EFF8A8 /* GYAddressCityModel.m in Sources */,
 				1C2EA3831C957A2500AFD60F /* ZPNetworking.m in Sources */,
-				1CCE3FF71CF2117600430EED /* Person+CoreDataProperties.m in Sources */,
-				1CCE3FF51CF2117600430EED /* Department.m in Sources */,
 				1C2EA3251C9521A200AFD60F /* AppDelegate.m in Sources */,
 				1CBBFBDE1D0DA44100EFF8A8 /* GYFMDBAddressProvinceManager.m in Sources */,
 				1CDB553E1D14C250000CB128 /* ZPMJExtensionModel.m in Sources */,
 				1CCE40001CF211F700430EED /* ZPUploadImageFromSystemViewController.m in Sources */,
 				1C2EA3221C9521A200AFD60F /* main.m in Sources */,
 				1CDB553B1D14C1CA000CB128 /* ZPMJExtensionViewController.m in Sources */,
-				1CCE3FF81CF2117600430EED /* Person.m in Sources */,
 				E98DFCDF1D1BDB9B00B9F1A1 /* ZPScanViewController.m in Sources */,
 				1C5227011C9CF06D0069D736 /* ZPFirstJSONModel.m in Sources */,
 				1CEA39AA1D130B1800619963 /* ZPNotificationHub.m in Sources */,
+				1C90105E1D570C110036BF43 /* Department.m in Sources */,
 				1CEA39A31D130AA700619963 /* ZPFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
