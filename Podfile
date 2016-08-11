@@ -6,3 +6,5 @@ pod 'FMDB'
 pod 'MJExtension'
 pod 'QRCodeReaderViewController'
 pod 'IQKeyboardManager'
+pod 'BaiduMapKit'
+
