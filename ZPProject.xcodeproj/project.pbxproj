@@ -53,6 +53,8 @@
 		E98DFCDC1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCDB1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m */; };
 		E98DFCDF1D1BDB9B00B9F1A1 /* ZPScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCDE1D1BDB9B00B9F1A1 /* ZPScanViewController.m */; };
 		E98DFCE21D1BDD4D00B9F1A1 /* ZPScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98DFCE11D1BDD4D00B9F1A1 /* ZPScanResultViewController.m */; };
+		E9A0B7C21D5821EE00A98903 /* ZPMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0B7C11D5821EE00A98903 /* ZPMapManager.m */; };
+		E9FC18BC1D59CF4800A27C85 /* ZPMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9FC18BB1D59CF4800A27C85 /* ZPMapViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,10 @@
 		E98DFCDE1D1BDB9B00B9F1A1 /* ZPScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPScanViewController.m; sourceTree = "<group>"; };
 		E98DFCE01D1BDD4D00B9F1A1 /* ZPScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPScanResultViewController.h; sourceTree = "<group>"; };
 		E98DFCE11D1BDD4D00B9F1A1 /* ZPScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPScanResultViewController.m; sourceTree = "<group>"; };
+		E9A0B7C01D5821EE00A98903 /* ZPMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMapManager.h; sourceTree = "<group>"; };
+		E9A0B7C11D5821EE00A98903 /* ZPMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPMapManager.m; sourceTree = "<group>"; };
+		E9FC18BA1D59CF4800A27C85 /* ZPMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPMapViewController.h; sourceTree = "<group>"; };
+		E9FC18BB1D59CF4800A27C85 /* ZPMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZPMapViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,7 @@
 		1C2EA31F1C9521A200AFD60F /* ZPProject */ = {
 			isa = PBXGroup;
 			children = (
+				E9A0B7BC1D5821A100A98903 /* Map */,
 				E98DFCD41D1BD26600B9F1A1 /* ZP-pch */,
 				1C014DA11C986BAF007E4F8D /* ZPAPI */,
 				1C2EA3801C95762D00AFD60F /* Network */,
@@ -620,6 +627,17 @@
 			path = "二维码";
 			sourceTree = "<group>";
 		};
+		E9A0B7BC1D5821A100A98903 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0B7C01D5821EE00A98903 /* ZPMapManager.h */,
+				E9A0B7C11D5821EE00A98903 /* ZPMapManager.m */,
+				E9FC18BA1D59CF4800A27C85 /* ZPMapViewController.h */,
+				E9FC18BB1D59CF4800A27C85 /* ZPMapViewController.mm */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		EED64F1DBA4B29CB998A0B62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,12 +834,14 @@
 				1CCE3FF61CF2117600430EED /* Employees.xcdatamodel in Sources */,
 				1C2641421CFC9B8F0000C6ED /* ZPAPI.m in Sources */,
 				1C014DA01C9869BA007E4F8D /* ZPFirstPOSTViewController.m in Sources */,
+				E9FC18BC1D59CF4800A27C85 /* ZPMapViewController.mm in Sources */,
 				1C26413B1CFC8C290000C6ED /* ZPMBProgressHUDViewController.m in Sources */,
 				E98DFCDC1D1BD43E00B9F1A1 /* ZPQRCodeViewController.m in Sources */,
 				1C2EA3691C954EB000AFD60F /* ZPFourViewController.m in Sources */,
 				1C9010641D570C2D0036BF43 /* Person.m in Sources */,
 				1CCE3FFF1CF211F700430EED /* ZPNewFeatuersViewController.m in Sources */,
 				1CEA39A91D130B1800619963 /* ZPNotificationHubViewController.m in Sources */,
+				E9A0B7C21D5821EE00A98903 /* ZPMapManager.m in Sources */,
 				1C2EA35C1C9522CE00AFD60F /* ZPTabbarViewController.m in Sources */,
 				1C2EA36F1C954F0E00AFD60F /* ZPThreeViewController.m in Sources */,
 				1C5226FE1C9CEFB90069D736 /* ZPJSONModelViewController.m in Sources */,
@@ -1007,6 +1027,7 @@
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d9e6cde3-ad1b-48dd-bd23-b944bd63c831";
@@ -1032,6 +1053,7 @@
 				INFOPLIST_FILE = ZPProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d9e6cde3-ad1b-48dd-bd23-b944bd63c831";

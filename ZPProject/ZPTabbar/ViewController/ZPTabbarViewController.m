@@ -55,7 +55,7 @@
     tabbarVC.viewControllers = VCArray;
 
     [[UIApplication sharedApplication ].delegate window].rootViewController = tabbarVC;
-    
+    tabbarVC.selectedIndex = 2;
     
 }
 
