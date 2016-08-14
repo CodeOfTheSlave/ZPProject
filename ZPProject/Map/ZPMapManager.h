@@ -11,10 +11,11 @@
 
 
 
-typedef void(^locationBlock)(CLLocation *);
+typedef void(^locationBlock)(CLLocation *location);
 
 @interface ZPMapManager : NSObject
 
+@property (nonatomic,copy) locationBlock locationInfo;
 
 
 +(ZPMapManager *)shareInstance;
@@ -47,11 +48,13 @@ typedef void(^locationBlock)(CLLocation *);
 -(CLAuthorizationStatus)obtainLocationStatus;
 
 
-///**
-// *  获取定位的经度、纬度信息
-// */
-//-(void)returnLocationInfo:(locationBlock)locationBlock;
 
+
+
+/**
+ *  通过Block回调返回定位信息 CLLocation （包含经度、纬度、速度、航向）
+ */
+-(void)returnLocationInfo:(locationBlock)locationBlock;
 
 
 

@@ -10,6 +10,8 @@
 
 @interface ZPMapViewController ()
 
+
+
 @end
 
 @implementation ZPMapViewController
@@ -18,37 +20,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self initView];
-}
-
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    NSLog(@"Show Controller: %@", [self class]);
-
-}
-
-- (void)dealloc {
-    NSLog(@"Dealloc Controller: %@", [self class]);
-}
-
-// #pragma mark - SystemDelegate   
-// #pragma mark TableView Delegate    
-// #pragma mark - CustomDelegate  
-// #pragma mark - event response  
-
-#pragma mark - private methods 
-- (void)initView
-{
+    
     self.title = @"baiduMap";
     self.view.backgroundColor = kDefaultVCBackgroundColor;
-    NSLog(@"Load Controller: %@", [self class]);
+    
     
     ZPMapManager *manager = [ZPMapManager shareInstance];
     [manager start];
+    
+    UIButton *btn =[UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(50, 100, kScreenWidth-100, 50);
+    [btn setTitle:@"定位" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
-#pragma mark - getters and setters  
+-(void)btnClick {
+    
+    
+    [[ZPMapManager shareInstance] returnLocationInfo:^(CLLocation *location) {
+        if(location) {
+            NSLog(@"定位成功:%@",location);
+        }else {
+            NSLog(@"定位失败");
+        }
+        
+    }];
+}
+
+
+
+
+
+
+
+ 
+
+
 
 
 @end

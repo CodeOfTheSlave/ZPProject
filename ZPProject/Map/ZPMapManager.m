@@ -12,6 +12,10 @@
 
 @interface ZPMapManager()<BMKGeneralDelegate,CLLocationManagerDelegate>
 
+@property (nonatomic,strong) CLLocationManager  *locationManager;
+
+
+
 @end
 
 @implementation ZPMapManager
@@ -32,6 +36,9 @@
     BMKMapManager *manager = [[BMKMapManager alloc] init];
     BOOL isStart =[manager start:mapKey generalDelegate:self];
     NSLog(@"%d",isStart);
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [self.locationManager requestAlwaysAuthorization];
+    }
     
 }
 
@@ -75,15 +82,23 @@
 }
 
 
-//-(void)returnLocationInfo:(locationBlock)locationBlock {
-//
-//    CLLocationManager *locationManager = [[CLLocationManager alloc]init ];
-//    locationManager.delegate = self;
-//    
-//    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-//    [locationManager startUpdatingLocation];
-//    
-//}
+
+-(void)returnLocationInfo:(locationBlock)locationBlock {
+    
+    if(!locationBlock) {
+        return;
+    }
+    
+    if([self cheakLocationServer]) {
+        self.locationInfo = locationBlock;
+        [self.locationManager startUpdatingLocation];
+    }else {
+        NSLog(@"定位服务没开启:请在设置—隐私-定位服务中打开");
+    }
+    
+    
+}
+
 
 #pragma mark- CLLocationManagerDelegate
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
@@ -108,6 +123,44 @@
     }else {
          NSLog(@"start baiduMap service fail:%d",iError);
     }
+}
+
+#pragma mar- CLLocationManagerDelegate
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+
+    if(self.locationInfo) {
+        self.locationInfo(locations[0]);
+    }
+    CLLocation *location = locations[0];
+    NSLog(@"纬度:%f    经度:%f   ",location.coordinate.latitude,location.coordinate.longitude);
+    //速度
+    if(location.speed > 0) {
+        NSLog(@"速度:%f",location.speed);
+    }else {
+        NSLog(@"速度无效");
+    }
+    
+    
+    //*范围：
+    //* 0 - 359.9度，0是真正的北方
+    if(location.course < 0 || location.course > 359.9) {
+        NSLog(@"航向无效");
+    }else {
+        NSLog(@"航向:%f",location.course);
+    }
+}
+
+
+#pragma mark- 懒加载
+-(CLLocationManager *)locationManager {
+
+    if(!_locationManager) {
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = kCLLocationAccuracyHundredMeters;
+    }
+    return _locationManager;
 }
 
 @end
