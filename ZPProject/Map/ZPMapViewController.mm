@@ -7,10 +7,11 @@
 
 #import "ZPMapViewController.h"
 #import "ZPMapManager.h"
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
 
 @interface ZPMapViewController ()
 
-
+@property (nonatomic,strong) UILabel *locationLabel;
 
 @end
 
@@ -28,35 +29,35 @@
     ZPMapManager *manager = [ZPMapManager shareInstance];
     [manager start];
     
+    
+    self.locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, kScreenWidth -100, 30)];
+    self.locationLabel.backgroundColor = [UIColor lightGrayColor];
+    self.locationLabel.text = @"经度 纬度 :";
+    [self.view addSubview:self.locationLabel];
+    
     UIButton *btn =[UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor redColor];
-    btn.frame = CGRectMake(50, 100, kScreenWidth-100, 50);
+    btn.frame = CGRectMake(50, 400, kScreenWidth-100, 50);
     [btn setTitle:@"定位" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
 }
 
 -(void)btnClick {
     
-    
     [[ZPMapManager shareInstance] returnLocationInfo:^(CLLocation *location) {
         if(location) {
             NSLog(@"定位成功:%@",location);
+            self.locationLabel.text = [NSString stringWithFormat:@"经度 纬度 :%f,%f",location.coordinate.longitude,location.coordinate.latitude];
         }else {
             NSLog(@"定位失败");
+            self.locationLabel.text = [NSString stringWithFormat:@"经度 纬度 :null"];
         }
-        
     }];
+
 }
-
-
-
-
-
-
-
- 
-
 
 
 

@@ -11,6 +11,7 @@
 
 
 
+
 typedef void(^locationBlock)(CLLocation *location);
 
 @interface ZPMapManager : NSObject
@@ -48,14 +49,10 @@ typedef void(^locationBlock)(CLLocation *location);
 -(CLAuthorizationStatus)obtainLocationStatus;
 
 
-
-
-
 /**
  *  通过Block回调返回定位信息 CLLocation （包含经度、纬度、速度、航向）
  */
 -(void)returnLocationInfo:(locationBlock)locationBlock;
-
 
 
 

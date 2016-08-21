@@ -8,12 +8,12 @@
 
 #import "ZPMapManager.h"
 #import "BMKMapManager.h"
+#import "BMKLocationComponent.h"
 
+@interface ZPMapManager()<BMKGeneralDelegate,BMKLocationServiceDelegate>
 
-@interface ZPMapManager()<BMKGeneralDelegate,CLLocationManagerDelegate>
-
-@property (nonatomic,strong) CLLocationManager  *locationManager;
-
+@property (nonatomic,strong) BMKLocationService  *locationService;
+@property (nonatomic,strong) CLLocationManager *locationManager;
 
 
 @end
@@ -38,6 +38,7 @@
     NSLog(@"%d",isStart);
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
         [self.locationManager requestAlwaysAuthorization];
+        [self.locationManager requestWhenInUseAuthorization];
     }
     
 }
@@ -82,30 +83,60 @@
 }
 
 
-
 -(void)returnLocationInfo:(locationBlock)locationBlock {
-    
+
     if(!locationBlock) {
         return;
     }
     
     if([self cheakLocationServer]) {
         self.locationInfo = locationBlock;
-        [self.locationManager startUpdatingLocation];
+        [self.locationService startUserLocationService];
     }else {
         NSLog(@"定位服务没开启:请在设置—隐私-定位服务中打开");
     }
-    
-    
 }
 
 
-#pragma mark- CLLocationManagerDelegate
--(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+#pragma mark- BMKLocationServiceDelegate
+-(void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
+
+    NSLog(@"userLocation:%@",userLocation);
+    if(self.locationInfo) {
+        self.locationInfo(userLocation.location);
+    }
+    //停止位置更新
+    [self.locationService stopUserLocationService];
+    CLLocation *location = userLocation.location;
+    NSLog(@"纬度:%f    经度:%f   ",location.coordinate.latitude,location.coordinate.longitude);
+    //速度
+    if(location.speed > 0) {
+        NSLog(@"速度:%f",location.speed);
+    }else {
+        NSLog(@"速度无效");
+    }
     
-    NSLog(@"经度：%g",newLocation.coordinate.latitude);
-    NSLog(@"纬度：%g",newLocation.coordinate.longitude);
+    //*范围：
+    //* 0 - 359.9度，0是真正的北方
+    if(location.course < 0 || location.course > 359.9) {
+        NSLog(@"航向无效");
+    }else {
+        NSLog(@"航向:%f",location.course);
+    }
+
 }
+
+- (void)didFailToLocateUserWithError:(NSError *)error {
+
+    NSLog(@"error:%@",error);
+    if(self.locationInfo) {
+        self.locationInfo(nil);
+    }
+    //停止位置更新
+    [self.locationService stopUserLocationService];
+    
+}
+
 
 #pragma mark- BMKGeneralDelegate
 -(void)onGetNetworkState:(int)iError {
@@ -125,40 +156,23 @@
     }
 }
 
-#pragma mar- CLLocationManagerDelegate
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+#pragma mark- 懒加载
+-(BMKLocationService *)locationService {
 
-    if(self.locationInfo) {
-        self.locationInfo(locations[0]);
+    if(!_locationService) {
+        _locationService = [[BMKLocationService alloc] init];
+        _locationService.delegate = self;
+        self.locationService.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationService.distanceFilter = kCLLocationAccuracyHundredMeters;
     }
-    CLLocation *location = locations[0];
-    NSLog(@"纬度:%f    经度:%f   ",location.coordinate.latitude,location.coordinate.longitude);
-    //速度
-    if(location.speed > 0) {
-        NSLog(@"速度:%f",location.speed);
-    }else {
-        NSLog(@"速度无效");
-    }
-    
-    
-    //*范围：
-    //* 0 - 359.9度，0是真正的北方
-    if(location.course < 0 || location.course > 359.9) {
-        NSLog(@"航向无效");
-    }else {
-        NSLog(@"航向:%f",location.course);
-    }
+    return _locationService;
 }
 
 
-#pragma mark- 懒加载
 -(CLLocationManager *)locationManager {
-
     if(!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        self.locationManager.distanceFilter = kCLLocationAccuracyHundredMeters;
+    
     }
     return _locationManager;
 }
