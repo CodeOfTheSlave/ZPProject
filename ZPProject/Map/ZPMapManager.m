@@ -71,7 +71,6 @@
     
 }
 
-
 -(CLAuthorizationStatus)obtainLocationStatus {
 //        kCLAuthorizationStatusNotDetermined,//用户还没做出是否要允许应用使用定位功能的决定
 //        kCLAuthorizationStatusRestricted,// 无法使用定位服务，该状态用户无法改变
@@ -91,6 +90,8 @@
     
     if([self cheakLocationServer]) {
         self.locationInfo = locationBlock;
+        self.locationService.delegate = self;
+        [self.locationService stopUserLocationService];
         [self.locationService startUserLocationService];
     }else {
         NSLog(@"定位服务没开启:请在设置—隐私-定位服务中打开");
@@ -104,6 +105,7 @@
     NSLog(@"userLocation:%@",userLocation);
     if(self.locationInfo) {
         self.locationInfo(userLocation.location);
+        self.locationInfo = nil;
     }
     //停止位置更新
     [self.locationService stopUserLocationService];
@@ -131,6 +133,7 @@
     NSLog(@"error:%@",error);
     if(self.locationInfo) {
         self.locationInfo(nil);
+        self.locationInfo = nil;
     }
     //停止位置更新
     [self.locationService stopUserLocationService];
@@ -162,8 +165,6 @@
     if(!_locationService) {
         _locationService = [[BMKLocationService alloc] init];
         _locationService.delegate = self;
-        self.locationService.desiredAccuracy = kCLLocationAccuracyBest;
-        self.locationService.distanceFilter = kCLLocationAccuracyHundredMeters;
     }
     return _locationService;
 }
@@ -172,7 +173,6 @@
 -(CLLocationManager *)locationManager {
     if(!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
-    
     }
     return _locationManager;
 }
