@@ -32,7 +32,8 @@
     return manager;
 }
 
-
+// 不需要的代理需要置为nil，否则影响内存释放
+// !!!在NSObject 会不会调用！！！
 -(void)dealloc {
     self.locationService.delegate = nil;
     self.geocodesearch.delegate = nil;
