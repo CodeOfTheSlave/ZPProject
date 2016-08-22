@@ -55,5 +55,9 @@ typedef void(^locationBlock)(CLLocation *location);
 -(void)returnLocationInfo:(locationBlock)locationBlock;
 
 
+/**
+ *  反向地理编码 ，传入CLLocation
+ */
+-(void)reverseGeocode:(CLLocation *)location;
 
 @end

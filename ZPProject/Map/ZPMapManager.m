@@ -9,10 +9,13 @@
 #import "ZPMapManager.h"
 #import "BMKMapManager.h"
 #import "BMKLocationComponent.h"
+#import "BMKSearchComponent.h"
+#import "BMKPointAnnotation.h"
 
-@interface ZPMapManager()<BMKGeneralDelegate,BMKLocationServiceDelegate>
+@interface ZPMapManager()<BMKGeneralDelegate,BMKLocationServiceDelegate,BMKGeoCodeSearchDelegate>
 
 @property (nonatomic,strong) BMKLocationService  *locationService;
+@property (nonatomic,strong) BMKGeoCodeSearch *geocodesearch;
 @property (nonatomic,strong) CLLocationManager *locationManager;
 
 
@@ -29,6 +32,12 @@
     return manager;
 }
 
+
+-(void)dealloc {
+    self.locationService.delegate = nil;
+    self.geocodesearch.delegate = nil;
+    
+}
 
 -(void)start {
     
@@ -98,6 +107,39 @@
     }
 }
 
+-(void)reverseGeocode:(CLLocation *)location {
+
+    CLLocationCoordinate2D pt = (CLLocationCoordinate2D){location.coordinate.latitude, location.coordinate.longitude};
+    BMKReverseGeoCodeOption *reverseGeocodeSearchOption = [[BMKReverseGeoCodeOption alloc]init];
+    reverseGeocodeSearchOption.reverseGeoPoint = pt;
+    self.geocodesearch = [[BMKGeoCodeSearch alloc] init];
+    self.geocodesearch.delegate = self;
+    BOOL flag = [self.geocodesearch reverseGeoCode:reverseGeocodeSearchOption];
+    if(flag)
+    {
+        NSLog(@"反geo检索发送成功");
+    }
+    else
+    {
+        NSLog(@"反geo检索发送失败");
+    }
+
+}
+
+#pragma mark -BMKGeoCodeSearchDelegate
+-(void) onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+{
+    if (error == 0) {
+        BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
+        item.coordinate = result.location;
+        item.title = result.address;
+        NSString* titleStr = @"反向地理编码";
+        NSString* showmeg = [NSString stringWithFormat:@"%@",item.title];
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:titleStr message:showmeg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
+        [myAlertView show];
+    }
+}
 
 #pragma mark- BMKLocationServiceDelegate
 -(void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
@@ -175,6 +217,15 @@
         _locationManager = [[CLLocationManager alloc] init];
     }
     return _locationManager;
+}
+
+-(BMKGeoCodeSearch *)geocodesearch {
+
+    if(!_geocodesearch) {
+        _geocodesearch = [[BMKGeoCodeSearch alloc] init];
+        _geocodesearch.delegate = self;
+    }
+    return _geocodesearch;
 }
 
 @end

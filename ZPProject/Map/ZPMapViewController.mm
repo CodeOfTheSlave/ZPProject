@@ -47,6 +47,7 @@
 
 -(void)btnClick {
     
+  //定位当前位置
     [[ZPMapManager shareInstance] returnLocationInfo:^(CLLocation *location) {
         if(location) {
             NSLog(@"定位成功:%@",location);
@@ -55,7 +56,11 @@
             NSLog(@"定位失败");
             self.locationLabel.text = [NSString stringWithFormat:@"经度 纬度 :null"];
         }
+        
+        [[ZPMapManager shareInstance] reverseGeocode:location];
     }];
+    
+    
 
 }
 
