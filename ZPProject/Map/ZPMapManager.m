@@ -107,7 +107,25 @@
     }
 }
 
+-(void)returnLocationAddress:(locationAddress)address  {
+
+    if(address == nil)  {
+        return;
+    }
+    
+    self.locationAddressBlock = address;
+    __weak typeof(self) weakSelf = self;
+    [self returnLocationInfo:^(CLLocation *location) {
+        [weakSelf reverseGeocode:location];
+    }];
+}
+
 -(void)reverseGeocode:(CLLocation *)location {
+    
+    if(location == nil) {
+        NSLog(@"无定位经纬度信息");
+        return;
+    }
 
     CLLocationCoordinate2D pt = (CLLocationCoordinate2D){location.coordinate.latitude, location.coordinate.longitude};
     BMKReverseGeoCodeOption *reverseGeocodeSearchOption = [[BMKReverseGeoCodeOption alloc]init];
@@ -133,11 +151,12 @@
         BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
         item.coordinate = result.location;
         item.title = result.address;
-        NSString* titleStr = @"反向地理编码";
         NSString* showmeg = [NSString stringWithFormat:@"%@",item.title];
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:titleStr message:showmeg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
-        [myAlertView show];
+        if(self.locationAddressBlock) {
+            self.locationAddressBlock(showmeg);
+            self.locationAddressBlock = nil;
+        }
     }
 }
 

@@ -12,11 +12,14 @@
 
 
 
-typedef void(^locationBlock)(CLLocation *location);
+typedef void(^locationBlock)(CLLocation *location);//定位当前位置的回调
+typedef void(^locationAddress)(NSString *address);//定位当前地址的回调
+
 
 @interface ZPMapManager : NSObject
 
 @property (nonatomic,copy) locationBlock locationInfo;
+@property (nonatomic,copy) locationAddress locationAddressBlock;
 
 
 +(ZPMapManager *)shareInstance;
@@ -59,5 +62,10 @@ typedef void(^locationBlock)(CLLocation *location);
  *  反向地理编码 ，传入CLLocation
  */
 -(void)reverseGeocode:(CLLocation *)location;
+
+/**
+ *  通过Block回调返回定位的地址信息 
+ */
+-(void)returnLocationAddress:(locationAddress)address;
 
 @end
