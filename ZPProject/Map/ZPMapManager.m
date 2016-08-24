@@ -149,11 +149,7 @@
 -(void) onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
 {
     if (error == 0) {
-        BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
-        item.coordinate = result.location;
-        item.title = result.address;
-        NSString* showmeg = [NSString stringWithFormat:@"%@",item.title];
-        
+        NSString* showmeg = [NSString stringWithFormat:@"%@",result.address];
         if(self.locationAddressBlock) {
             self.locationAddressBlock(showmeg);
             self.locationAddressBlock = nil;
