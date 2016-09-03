@@ -42,7 +42,8 @@
 
 -(void)start {
     
-    NSString *mapKey = @"FEAUcrfePf7MbyisTClGlyVa2ugP5l9D";
+    //与Bundle Identifier有关
+    NSString *mapKey = @"0bhEv9BmUnBSAZS88Wrr8P1yOQPaQrmK";
     BMKMapManager *manager = [[BMKMapManager alloc] init];
     BOOL isStart =[manager start:mapKey generalDelegate:self];
     NSLog(@"%d",isStart);
@@ -50,7 +51,7 @@
         [self.locationManager requestAlwaysAuthorization];
         [self.locationManager requestWhenInUseAuthorization];
     }
-    
+     
 }
 
 

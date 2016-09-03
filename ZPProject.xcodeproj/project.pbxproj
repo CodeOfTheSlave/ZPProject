@@ -1014,8 +1014,8 @@
 			baseConfigurationReference = 842A622DDFF335BFCE7FCC89 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (BLZVWL666E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (BLZVWL666E)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPProject/ZP-pch/ZPProject.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1028,9 +1028,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdev.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8312c98-1f7c-451f-b69e-4332f9a624b7";
+				PROVISIONING_PROFILE = "6782b04b-2dad-46e4-b233-c524eb0847f0";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
@@ -1040,8 +1040,8 @@
 			baseConfigurationReference = 8EDFDB81E4CD84C41D4A40D0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liang jian lin (7KL9MQK9NP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (BLZVWL666E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (BLZVWL666E)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPProject/ZP-pch/ZPProject.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1054,9 +1054,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsxt.hsxt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdev.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8312c98-1f7c-451f-b69e-4332f9a624b7";
+				PROVISIONING_PROFILE = "6782b04b-2dad-46e4-b233-c524eb0847f0";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;

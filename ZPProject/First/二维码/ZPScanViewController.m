@@ -55,7 +55,6 @@
     return YES;
 }
 
-
 #pragma mark - QRCodeReaderDelegate
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result {
     [reader stopScanning];
