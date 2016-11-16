@@ -36,8 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //创建数据库文件
-    //添加实体 (数据库表)
+    //创建数据库文件   （生成Employees.xcdatamodel 这个文件）
+    //添加实体 (数据库表，即添加Department)
     //添加实体模型  （model）
     //生成上下文
     
