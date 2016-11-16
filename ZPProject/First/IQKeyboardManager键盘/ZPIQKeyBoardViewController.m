@@ -26,6 +26,7 @@
     
      returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    
 //    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
 }
 
